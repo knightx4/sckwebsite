@@ -3,50 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Website</title>
+    <title>Atypography-Inspired</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f9;
+        /* Import Custom Font */
+        @font-face {
+            font-family: 'Epetri';
+            src: url('fonts/epetri.woff2') format('woff2'),
+                 url('fonts/epetri.woff') format('woff'),
+                 url('fonts/epetri.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* General Reset */
+        body, html {
             margin: 0;
             padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #fefefe;
+            color: #111;
         }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1rem 0;
+
+        /* Fullscreen Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #ffffff;
         }
-        main {
-            padding: 2rem;
+
+        .hero h1 {
+            font-size: 4vw;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 0;
+            font-family: 'Epetri', sans-serif; /* Apply Custom Font */
         }
-        a {
-            color: #007BFF;
+
+        .hero p {
+            font-size: 1.2rem;
+            letter-spacing: 0.5px;
+            color: #555;
+            margin: 20px 0;
+            max-width: 600px;
+        }
+
+        .hero a {
             text-decoration: none;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #000;
+            border: 2px solid #000;
+            padding: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
         }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+
+        .hero a:hover {
+            background-color: #000;
+            color: #fff;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <main>
-        <p>Hello! This is my personal homepage.</p>
+    <div class="hero">
+        <h1>Typography Matters</h1>
         <p>
-            Check out my <a href="https://github.com/" target="_blank">GitHub</a> or connect with me on 
-            <a href="https://linkedin.com/" target="_blank">LinkedIn</a>.
+            Welcome to a world where words are art. Explore bold, creative, and visually striking typography designs.
         </p>
-    </main>
-    <footer>
-        <p>&copy; 2025 My Name. All rights reserved.</p>
-    </footer>
+        <a href="#">Discover More</a>
+    </div>
 </body>
 </html>
