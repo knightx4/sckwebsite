@@ -2,17 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- 1. Make it responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>IS-LM Dashboard</title>
   <style>
-    /* Make iframe fill the viewport */
+    /* 2. Zero out margins, force full‐screen, hide overflow */
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
     }
+
+    /* 3. Position iframe absolutely so it spans the entire viewport */
     #islm-frame {
-      width: 100%;
-      height: 100%; /* Fill the entire viewport */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
       border: none;
     }
   </style>
