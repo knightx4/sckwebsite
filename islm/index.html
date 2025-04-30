@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IS-LM Dashboard</title>
+  <style>
+    /* Make iframe fill the viewport */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    #islm-frame {
+      width: 100%;
+      height: calc(100% - 60px); /* Adjust height to account for logo */
+      border: none;
+    }
+    #logo-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 60px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    }
+    #logo-container img {
+      height: 40px; /* Adjust logo size */
+    }
+  </style>
+</head>
+<body>
+  <div id="logo-container">
+    <img src="path/to/your-logo.png" alt="Logo" />
+  </div>
+  <iframe
+    id="islm-frame"
+    src="https://interactive-islm.vercel.app"
+    allowfullscreen
+    sandbox="allow-scripts allow-same-origin allow-forms"
+  ></iframe>
+</body>
+</html>
